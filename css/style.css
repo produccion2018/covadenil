@@ -321,83 +321,83 @@ footer h3:hover{
 
 /* responsive */
 
-/* Estilos generales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Barlow', sans-serif;
-}
-
-/* Navbar */
-.navbar {
-  padding: 0.2rem;
-  background-color: #0080ff;
-}
-
-/* Sección Nosotros */
-.nosotros {
-  margin: auto;
-  padding: 100px 20px;
-}
-
-/* Columnas flexibles */
-.nosotros .fila {
-  display: flex;
-  align-items: center;
-}
-
-/* Ajustes para pantallas más pequeñas */
-@media (max-width: 768px) {
-  .nosotros .fila {
-      flex-direction: column;
-      align-items: center;
+/* Celulares (menos de 768px) */
+@media (max-width: 767px) {
+  .navbar-brand {
+    font-size: 1.5rem;
   }
-
-  .nosotros .fila .col {
-      width: 100%;
-      margin-bottom: 20px;
+  .nav-link {
+    font-size: 1rem;
   }
-
-  .nosotros .fila .col img {
-      width: 90%; /* Ajusta la imagen */
+  .carrusel {
+    width: 100%;
   }
-}
-
-/* Sección Servicios */
-.servicios .contenido-seccion .fila {
-  padding: 100px 0;
-}
-
-/* Ajustes para tabletas */
-@media (max-width: 1024px) {
+  .nosotros {
+    padding: 50px 10px;
+  }
+  .servicios {
+    padding: 50px 10px;
+  }
+  .servicios .contenido-seccion {
+    padding: 0 10px;
+  }
   .servicios .contenido-seccion .fila {
-      flex-direction: column;
+    flex-direction: column;
   }
-
   .servicios .contenido-seccion .fila .col {
-      width: 100%;
-      margin-bottom: 20px;
+    width: 100%;
   }
-
-  .servicios .contenido-seccion .fila .col img {
-      width: 70%; /* Ajusta la imagen para tabletas */
+  footer {
+    padding: 10px;
   }
 }
 
-/* Estilos para pantallas grandes */
-@media (min-width: 1025px) {
-  .nosotros .fila .col {
-      width: 50%;
+/* Tabletas (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar-brand {
+    font-size: 2rem;
   }
-
-  .servicios .contenido-seccion .fila .col {
-      width: 50%;
+  .nav-link {
+    font-size: 1.2rem;
+  }
+  .carrusel {
+    width: 80%;
+  }
+  .nosotros {
+    padding: 100px 20px;
+  }
+  .servicios {
+    padding: 100px 20px;
+  }
+  .servicios .contenido-seccion {
+    padding: 0 20px;
+  }
+  footer {
+    padding: 20px;
   }
 }
 
-/* Footer */
-footer {
-  padding: 20px;
-  text-align: center;
+/* Computadoras (más de 1024px) */
+@media (min-width: 1024px) {
+  .navbar-brand {
+    font-size: 2.5rem;
+  }
+  .nav-link {
+    font-size: 1.5rem;
+  }
+  .carrusel {
+    width: 60%;
+  }
+  .nosotros {
+    padding: 150px 30px;
+  }
+  .servicios {
+    padding: 150px 30px;
+  }
+  .servicios .contenido-seccion {
+    padding: 0 30px;
+  }
+  footer {
+    padding: 30px;
+  }
 }
