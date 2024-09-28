@@ -319,5 +319,46 @@ footer h3:hover{
   margin-right: 10px;
 }
 
+/* responsive */
 
+/* Añade media queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+  /* Estilos para tabletas y pantallas pequeñas */
+  .navbar {
+    padding: 0.5rem;
+  }
+  .carrusel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Estilos para pantallas muy pequeñas */
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+/* Utiliza unidades relativas y flexbox */
+.navbar {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carrusel {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Asegúrate de que las imágenes sean responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+}
 
