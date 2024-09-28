@@ -321,64 +321,83 @@ footer h3:hover{
 
 /* responsive */
 
-/* Pantallas pequeñas (480px - 768px) */
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  padding: 0.2rem;
+  background-color: #0080ff;
+}
+
+/* Sección Nosotros */
+.nosotros {
+  margin: auto;
+  padding: 100px 20px;
+}
+
+/* Columnas flexibles */
+.nosotros .fila {
+  display: flex;
+  align-items: center;
+}
+
+/* Ajustes para pantallas más pequeñas */
 @media (max-width: 768px) {
-  .navbar-brand {
-    font-size: 1.5rem;
+  .nosotros .fila {
+      flex-direction: column;
+      align-items: center;
   }
-  .nav-link {
-    font-size: 1rem;
+
+  .nosotros .fila .col {
+      width: 100%;
+      margin-bottom: 20px;
   }
-  .carrusel {
-    width: 100%;
+
+  .nosotros .fila .col img {
+      width: 90%; /* Ajusta la imagen */
   }
 }
 
-/* Pantallas muy pequeñas (menos de 480px) */
-@media (max-width: 480px) {
-  .navbar-brand {
-    font-size: 1rem;
+/* Sección Servicios */
+.servicios .contenido-seccion .fila {
+  padding: 100px 0;
+}
+
+/* Ajustes para tabletas */
+@media (max-width: 1024px) {
+  .servicios .contenido-seccion .fila {
+      flex-direction: column;
   }
-  .nav-link {
-    font-size: 0.8rem;
+
+  .servicios .contenido-seccion .fila .col {
+      width: 100%;
+      margin-bottom: 20px;
   }
-  .carrusel {
-    padding: 1rem;
+
+  .servicios .contenido-seccion .fila .col img {
+      width: 70%; /* Ajusta la imagen para tabletas */
   }
 }
 
-/* Tabletas (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .navbar {
-    padding: 2rem;
+/* Estilos para pantallas grandes */
+@media (min-width: 1025px) {
+  .nosotros .fila .col {
+      width: 50%;
   }
-  .carrusel {
-    width: 80%;
-  }
-}
 
-/* Pantallas grandes (más de 1024px) */
-@media (min-width: 1024px) {
-  .navbar {
-    padding: 3rem;
-  }
-  .carrusel {
-    width: 60%;
+  .servicios .contenido-seccion .fila .col {
+      width: 50%;
   }
 }
 
-.responsive-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.responsive-container {
-  max-width: 80%;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.responsive-text {
-  font-size: 1.2rem;
-  line-height: 1.5;
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
 }
