@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;600;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow';
+  }
+
+.navbar-brand{
+color: #ff8000;
+font-family: 'Fjalla One', sans-serif;
+}
+
+
+
+.navbar-toggler-icon{
+color: #000000;
+}
+
+.nav-link{
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0019f859;
+}
+.nav-link:hover{
+  color: #ff8000;
+}
+
+.navbar{
+  padding: 0,2rem;
+  background-color: #0080ff
+}
+
+.offcanvas-body{
+  background-color: #0000007e;
+}
+
+ body{
+  background-color: #dde1e9;
+
+}
+  .titles{
+    font-family: 'Fjalla One', sans-serif;
+}
+ 
+.img:hover {
+  transform: scale(1.1);
+}
+/* carusel */
+.carrusel{
+padding: 1rem;
+width: 500px;
+}
+/* SECCION NOSOTROS */
+/* *********** */
+.nosotros{
+  margin: auto;
+  height: 100vh;
+  background-color: #dde1e9;
+  padding: 100px 20px;
+}
+.nosotros .fila{
+  display: flex;
+  align-items: center;
+}
+.nosotros .fila .col{
+  width: 50%;
+}
+.nosotros .fila .col img{
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.nosotros .fila .col .contenedor-titulo{
+  display: flex;
+  align-items:center
+}
+.nosotros .fila .col .contenedor-titulo .numero{
+  color: #ff8000;
+  font-weight: bold;
+  display: block;
+  font-size: 5rem;
+}
+.nosotros .fila .col .contenedor-titulo .info{
+  margin-left: 30px;
+}
+.nosotros .fila .col .contenedor-titulo .info .frase{
+  color: #ff8000;
+}
+.nosotros .fila .col .contenedor-titulo .info h2{
+  font-size: 3rem;
+}
+.nosotros .fila .col p{
+ margin-bottom: 10px;
+ line-height: 28px;
+}
+.nosotros .fila .col .p-especial{
+  font-weight: bold;
+}
+.nosotros hr{
+  margin-bottom: 30px;
+}
+.nosotros .fila-nosotros{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nosotros .fila-nosotros .frase{
+  font-size: 18px;
+  font-weight: 600;
+}
+.nosotros .fila-nosotros h2{
+  font-size: 2.5rem;
+}
+.nosotros .fila-nosotros button{
+  background-color: #ff8000;
+  border: none;
+  color: #fff;
+  padding: 15px 35px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* ********** */
+/* SERVICIOS */
+/* ********** */
+
+.subtitulo{
+  color: #ff8000;
+}
+
+
+.servicios{
+  color: #080808;
+  position: relative;
+  background-image: url(../img/fondo\ de\ imagen.jpg);
+}
+.servicios .contenido-seccion{
+  background:linear-gradient( #ffffff3f, #f7f7f8),url(img/fondo-servicios.jpg);
+  background-size: cover;
+  background-position: center center;
+  margin: auto;
+  padding: 0 20px;
+}
+.servicios .contenido-seccion .fila{
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+}
+.servicios .contenido-seccion .fila .col{
+  width: 50%;
+}
+.servicios .contenido-seccion .fila .col img{
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+.servicios .fila .col .contenedor-titulo{
+  display: flex;
+  align-items: center;
+}
+.servicios .fila .col .contenedor-titulo .numero{
+  color: #ff8000;
+  font-weight: bold;
+  display: block;
+  font-size: 5rem;
+}
+.servicios .fila .col .contenedor-titulo .info{
+  margin-left: 30px;
+}
+.servicios .fila .col .contenedor-titulo .info .frase{
+  color: #ff8000;
+}
+.servicios .fila .col .contenedor-titulo .info h2{
+  font-size: 3rem;
+}
+.servicios .fila .col p{
+ margin-bottom: 10px;
+ line-height: 28px;
+}
+.servicios .fila .col .p-especial{
+  font-weight: bold;
+}
+.servicios .info-servicios{
+  max-width: 800px;
+  margin: auto;
+}
+.servicios .info-servicios table{
+  text-align: center;
+  background-color: #0e0d0d;
+  color: #ff8000;
+  border-collapse: collapse;
+  position: relative;
+  bottom: 100px;
+}
+.servicios .info-servicios table td{
+  padding: 30px;
+  border: 1px solid #171718
+}
+.servicios .info-servicios table td i{
+  color: #ff8000;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+
+}
+.servicios .info-servicios h3{
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.servicios .info-servicios p{
+  line-height: 30px;
+}
+
+/* main */
+
+.fondo{
+background-color: #dde1e9;
+}
+
+
+.padre {
+  padding: 20px;
+  display: flex;
+ align-items: center;
+  justify-content: center;
+  background-color: #1b1b326c;
+  transition: all 0.2s ease-in;
+  border: 2px solid #000000;
+ 
+}
+
+.imagenes:hover{
+  border: 0.1rem white solid;
+    color: white;
+}
+.padre:hover {
+  color: white;
+  background-color: #020216;
+}
+
+.card:hover{
+  background-color: #ff8000;
+
+}
+
+h5{
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  padding: 15px 0;
+}
+
+
+/* footer  */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col-md-6 {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+footer h3 {
+  margin-top: 0;
+  padding: 2rem;
+}
+
+
+footer h3:hover{
+  color: #ff8000;
+}
+
+.redes-sociales {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.redes-sociales li {
+  margin-right: 20px;
+}
+
+.redes-sociales a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.redes-sociales a:hover {
+  color:#ff800081;
+}
+
+.redes-sociales i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+
+
