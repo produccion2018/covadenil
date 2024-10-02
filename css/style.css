@@ -343,18 +343,83 @@ footer h3:hover{
 }
 
 /* responsive */
-
 /* Pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
-  /* Estilos para móviles */
+  .navbar {
+    padding: 0.5rem;
+  }
+  .carrusel {
+    width: 100%;
+  }
+  .nosotros .fila {
+    flex-direction: column;
+  }
+  .nosotros .fila .col {
+    width: 100%;
+  }
+  .servicios .contenido-seccion .fila {
+    flex-direction: column;
+  }
+  .servicios .contenido-seccion .fila .col {
+    width: 100%;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
 }
 
 /* Pantallas medianas (tabletas) */
 @media (min-width: 769px) and (max-width: 1024px) {
-  /* Estilos para tabletas */
+  .navbar {
+    padding: 1rem;
+  }
+  .carrusel {
+    width: 80%;
+  }
 }
 
 /* Pantallas grandes (computadoras) */
 @media (min-width: 1025px) {
-  /* Estilos para computadoras */
+  .navbar {
+    padding: 2rem;
+  }
+  .carrusel {
+    width: 60%;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  flex-basis: 45%; 
+}
+.nosotros .fila .col .contenedor-titulo .numero {
+  font-size: 5rem; 
+}
+.img {
+  max-width: 100%;
+  height: auto;
+}
+/* Ajustes adicionales */
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 1rem;
+  }
+  .p-especial {
+    font-size: 0.9rem;
+  }
+  .card-title {
+    font-size: 1.2rem;
+  }
+  .card-description {
+    font-size: 0.8rem;
+  }
 }
