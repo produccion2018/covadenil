@@ -342,84 +342,157 @@ footer h3:hover{
   margin-right: 10px;
 }
 
-/* responsive */
-/* Pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 0.5rem;
-  }
-  .carrusel {
-    width: 100%;
-  }
-  .nosotros .fila {
-    flex-direction: column;
-  }
-  .nosotros .fila .col {
-    width: 100%;
-  }
-  .servicios .contenido-seccion .fila {
-    flex-direction: column;
-  }
-  .servicios .contenido-seccion .fila .col {
-    width: 100%;
-  }
-  .card-container {
-    flex-direction: column;
-  }
-  .card {
-    width: 100%;
-  }
+/* responsive * /
+
+
+
+/* Estilos generales */
+
+
+body {
+  background-color: #dde1e9;
 }
 
-/* Pantallas medianas (tabletas) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .navbar {
-    padding: 1rem;
-  }
-  .carrusel {
-    width: 80%;
-  }
+/* Navbar */
+.navbar {
+  padding: 0.2rem;
+  background-color: #0080ff;
 }
 
-/* Pantallas grandes (computadoras) */
-@media (min-width: 1025px) {
-  .navbar {
-    padding: 2rem;
-  }
-  .carrusel {
-    width: 60%;
-  }
+.navbar-brand {
+  color: #ff8000;
+  font-family: 'Fjalla One', sans-serif;
 }
 
+.navbar-toggler-icon {
+  color: #000000;
+}
+
+.nav-link {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0019f859;
+}
+
+.nav-link:hover {
+  color: #ff8000;
+}
+
+/* Sección Nosotros */
+.nosotros {
+  margin: auto;
+  height: auto; /* Cambiado para que se ajuste al contenido */
+  background-color: #dde1e9;
+  padding: 50px 20px; /* Ajustado para móviles */
+}
+
+.nosotros .fila {
+  display: flex;
+  flex-direction: column; /* Cambiado para pantallas pequeñas */
+  align-items: center;
+}
+
+.nosotros .fila .col {
+  width: 100%; /* Ajustado a ancho completo */
+}
+
+.nosotros .fila .col img {
+  width: 80%; /* Ajustado para imágenes */
+  display: block;
+  margin: auto;
+  margin-bottom: 30px; /* Reducido */
+}
+
+.nosotros .fila-nosotros {
+  display: flex;
+  flex-direction: column; /* Cambiado para pantallas pequeñas */
+  align-items: center;
+}
+
+/* Servicios */
+.servicios {
+  color: #080808;
+  background-image: url(../img/fondo\ de\ imagen.jpg);
+}
+
+.servicios .contenido-seccion {
+  background: linear-gradient(#ffffff3f, #f7f7f8), url(img/fondo-servicios.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding: 50px 20px; /* Ajustado para móviles */
+}
+
+.servicios .contenido-seccion .fila {
+  display: flex;
+  flex-direction: column; /* Cambiado para pantallas pequeñas */
+  align-items: center;
+  padding: 50px 0; /* Reducido */
+}
+
+.servicios .fila .col img {
+  width: 80%; /* Ajustado para móviles */
+}
+
+/* Tarjetas */
 .card-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  justify-content: center; /* Centra las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en múltiples filas */
+  max-width: 100%; /* Ajuste para móviles */
+  gap: 20px; /* Espacio entre tarjetas */
 }
 
 .card {
-  flex-basis: 45%; 
+  background-color: #fff;
+  border: 2px solid #ff8000;
+  border-radius: 8px;
+  overflow: hidden; /* Esconde el desbordamiento */
+  text-align: center; /* Centra el texto */
+  transition: transform 0.3s, background-color 0.3s; /* Transiciones */
+  width: 90%; /* Ancho flexible para móviles */
+  max-width: 300px; /* Máximo ancho */
 }
-.nosotros .fila .col .contenedor-titulo .numero {
-  font-size: 5rem; 
+
+.card:hover {
+  transform: scale(1.05); /* Aumenta el tamaño en hover */
+  background-color: #ff8000; /* Cambia el fondo en hover */
+  color: white; /* Cambia el color del texto en hover */
 }
-.img {
-  max-width: 100%;
-  height: auto;
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
-/* Ajustes adicionales */
-@media (max-width: 768px) {
-  .nav-link {
-    font-size: 1rem;
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .nosotros .fila {
+      flex-direction: row; /* Cambiar a fila en pantallas más grandes */
   }
-  .p-especial {
-    font-size: 0.9rem;
+
+  .nosotros .fila .col {
+      width: 50%; /* 50% en pantallas más grandes */
   }
-  .card-title {
-    font-size: 1.2rem;
+
+  .servicios .contenido-seccion .fila {
+      flex-direction: row; /* Cambiar a fila en pantallas más grandes */
   }
-  .card-description {
-    font-size: 0.8rem;
+
+  .servicios .fila .col {
+      width: 50%; /* 50% en pantallas más grandes */
+  }
+
+  .card-container {
+      max-width: 1200px; /* Max ancho para contenedor de tarjetas */
   }
 }
+
