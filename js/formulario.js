@@ -1,24 +1,17 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evitar el envío del formulario
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita que se envíe el formulario de inmediato
 
-    // Obtener los valores de los campos
+    // Validación de campos (puedes personalizar más según tus necesidades)
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    // Validación simple
     if (name && email && message) {
-        // Guardar en localStorage
-        const contactInfo = { name, email, message };
-        localStorage.setItem('contactInfo', JSON.stringify(contactInfo));
-
-        // Mostrar respuesta
-        document.getElementById('response').innerText = "¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.";
-
-        // Limpiar el formulario
-        document.getElementById('contactForm').reset();
+        alert('Formulario enviado correctamente');
+        // Aquí puedes agregar la lógica para enviar el formulario a un servidor
+        this.reset(); // Reinicia el formulario
     } else {
-        document.getElementById('response').innerText = "Por favor, completa todos los campos.";
+        alert('Por favor, completa todos los campos.');
     }
 });
 
