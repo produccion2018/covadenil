@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Convadenil</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;600;800;900&display=swap"
+    rel="stylesheet">
   <!-- Agregar los íconos de Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon">
+
+  <!-- parrafos tipografia google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
   <!-- Barra de navegación -->
   <header>
@@ -18,10 +31,10 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="./index.html">Nosotros</a></li>
         <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="./page/productos.html">Productos</a></li>
+        <li><a href="./page/contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -31,79 +44,92 @@
     <div class="carousel-item">
       <img src="./img/Imagen1.jpg" alt="Imagen Producto">
     </div>
-    
+
   </section>
 
-  <!-- Sección Nosotros -->
-  <section id="nosotros" class="section-container">
-    <h1>Nosotros</h1>
-    <p class="p-especial">El origen de este colágeno es bovino, es decir, proviene de las vacas. Su organismo es más
-      compatible con el de los humanos a diferencia del colágeno tradicional que su origen es del pollo que tiene
-      muchas diferencias con el organismo humano</p>
+  <body class="fondo">
 
-    <p class="p-especial">El colágeno en polvo, tiene un proceso de hidrolizado, el cual se realiza a altas
-      temperaturas y eso genera que los beneficios puros del colágeno se pierdan, lo que en las ampollas bebibles no
-      pasa y permite que sus beneficios se aprovechan en su totalidad
-  </section>
 
-  <!-- Sección Servicios -->
-  <section id="servicios" class="section-container">
-    <h1>Servicios</h1>
-    <p class="p-especial">Promueve la salud de articulaciones y tejidos
-      Ayuda a mejorar la movilidad de articulaciones
-      Permite que la población mayor se recupere más rápido de la actividad física
-    </p>
+    <div class="container">
+      <div class="section">
+        <h1>Nosotros</h1>
+        <p class="p-especial.roboto-regular-italic">El origen de este colágeno es bovino, es decir, proviene de las
+          vacas. Su organismo es más compatible con el de los humanos a diferencia del colágeno tradicional, cuyo origen
+          es el pollo y tiene muchas diferencias con el organismo humano. El colágeno en polvo tiene un proceso de
+          hidrolizado que se realiza a altas temperaturas, lo cual puede hacer que algunos beneficios del colágeno se
+          pierdan. En cambio, en las ampollas bebibles, los beneficios se aprovechan en su totalidad
 
-    <p class="p-especial"> En el deporte
-      Mejora la elasticidad y la resistencia de articulaciones
-      Reduce dolores e inflamaciones causadas por la actividad física
-      Regenera tejidos
-      Ayuda a una rápida recuperación muscular
-      Previene lesiones
-      Contiene vitaminas, minerales y antioxidantes que mejoran el rendimiento deportivo.
-    </p>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/yourvideo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </section>
-<!-- Beneficios -->
-  <section id="beneficios">
-    <h1>Beneficios</h1>
-    <div class="cards">
-      <div class="card">
-        <img src="./img/Imagen8.jpg" alt="Beneficio 1">
-        <div class="card-body">
-          <h2>PIEL, PELO Y UÑAS</h2>
-          <p>Mejora la elasticidad, firmeza y aspecto de la piel
-            Ayuda a disminuir las arrugas y marcas de expresión.</p>
-        </div>
+          El colágeno en polvo, tiene un proceso de hidrolizado, el cual se realiza a altas temperaturas y eso genera
+          que los beneficios puros del colágeno se pierdan, lo que en las ampollas bebibles no pasa y permite que sus
+          beneficios se aprovechan en su totalidad.</p>
       </div>
-      <div class="card">
-        <img src="./img/Imagen9.jpg" alt="Beneficio 2">
-        <div class="card-body">
-          <h2>GENTE MAYOR</h2>
-          <p>Promueve la salud de articulaciones y tejidos Ayuda a mejorar la movilidad de articulaciones Permite que la población mayor se recupere más rápido de la actividad física.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="./img/Imagen5.jpg" alt="Beneficio 3">
-        <div class="card-body">
-          <h2>AMPOLLAS Y BEBIDAS</h2>
-          <P>Fácil ingesta Absorción más rápida que colágeno en polvo Ayuda a la salud intestinal reduciendo inflamaciones Sabor a naranja.</P>
+      <div class="section">
+        <h1>Servicios</h1>
+        <p class="p-especial.roboto-regular-italic">Promueve la salud de articulaciones y tejidos Ayuda a mejorar la
+          movilidad de articulaciones Permite que la población mayor se recupere más rápido de la actividad física
+
+          En el deporte Mejora la elasticidad y la resistencia de articulaciones Reduce dolores e inflamaciones causadas
+          por la actividad física Regenera tejidos Ayuda a una rápida recuperación muscular Previene lesiones Contiene
+          vitaminas, minerales y antioxidantes que mejoran el rendimiento deportivo..</p>
+        <div class="video-container">
+          <iframe src="./img/video/8 de agosto de 2024.mp4" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-icons">
-      <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
-      <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+    <div data-aos="fade-up-right">
+      <!-- Beneficios -->
+      <section id="beneficios">
+        <h1>Beneficios</h1>
+        <div class="cards">
+          <div class="card">
+            <img src="./img/Imagen8.jpg" alt="Beneficio 1">
+            <div class="card-body">
+              <h2>PIEL, PELO Y UÑAS</h2>
+              <p>Mejora la elasticidad, firmeza y aspecto de la piel
+                Ayuda a disminuir las arrugas y marcas de expresión.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/Imagen9.jpg" alt="Beneficio 2">
+            <div class="card-body">
+              <h2>GENTE MAYOR</h2>
+              <p>Promueve la salud de articulaciones y tejidos Ayuda a mejorar la movilidad de articulaciones Permite
+                que la
+                población mayor se recupere más rápido de la actividad física.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/Imagen5.jpg" alt="Beneficio 3">
+            <div class="card-body">
+              <h2>AMPOLLAS Y BEBIDAS</h2>
+              <P>Fácil ingesta Absorción más rápida que colágeno en polvo Ayuda a la salud intestinal reduciendo
+                inflamaciones Sabor a naranja.</P>
+            </div>
+          </div>
+        </div>
     </div>
-    <p>&copy; 2024 Convadenil. Todos los derechos reservados.</p>
-  </footer>
-</body>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-icons">
+        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+      </div>
+      <p>&copy; 2024 Convadenil. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Icono de WhatsApp -->
+    <a href="https://web.whatsapp.com/send?phone=1234567890" target="_blank" class="whatsapp-link">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+
 </html>
