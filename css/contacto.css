@@ -1,151 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;600;800;900&display=swap');
 /* Estilos generales */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Barlow', sans-serif;
 }
-body {
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  /* Estilos de la barra de navegación */
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #00b5e2;
-  }
-  
-  header .logo img {
-    height: 30px;
-    border-radius: 50%;
-    opacity: 0.7;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    text-transform: uppercase;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: #ff7f00;
-  }
-  
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+  font-family: 'Barlow', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #00b5e2;
+  color: white;
+}
+
+header .logo img {
+  max-width: 30px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-container {
-    width: 48%;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-container h2 {
-    margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 5px;
+  font-weight: 600;
 }
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
 }
 
 .submit-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
 }
 
-.submit-btn:hover {
-    background-color: #0056b3;
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
 }
 
-.map-container {
-    width: 48%;
+.footer-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
 }
 
-/* Footer */
-footer {
-    background-color: #00b5e2;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+.footer-icons .social-icon {
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+footer p {
+  text-align: center;
+  color: #555;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  header .logo img {
+      max-width: 80px;
   }
-  
-  .footer-icons {
-    margin-bottom: 10px;
-  }
-  
-  .social-icon {
-    color: white;
-    font-size: 24px;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-  
-  .social-icon:hover {
-    color: #ff7f00;
-  }
-  
-  footer p {
-    margin-top: 10px;
-    font-size: 14px;
-  }
-  
-  /* Responsividad */
-  @media (max-width: 768px) {
-    .carousel-item {
-      width: 100%;
-    }
-    
-    iframe {
-      width: 100%;
-      height: auto;
-    }
-    
-    .cards {
+
+  header nav ul {
       flex-direction: column;
-      align-items: center;
-    }
+      gap: 10px;
   }
-  
 
+  .form-container {
+      padding: 15px;
+  }
+
+  .map-container iframe {
+      height: 250px;
+  }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .map-container {
+      width: 48%;
+  }
+
+  .form-container {
+      width: 48%;
+  }
+}
