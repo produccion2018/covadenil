@@ -148,7 +148,6 @@ footer {
     }
   }
   
-  /* responsive  */
   @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;600;800;900&display=swap');
 
 /* Estilos generales */
@@ -162,16 +161,67 @@ footer {
 body {
   background-color: #f4f4f4;
   color: #333;
+  font-family: 'Barlow', sans-serif;
 }
 
+/* Contenedor principal */
 .container {
   display: flex;
   justify-content: space-between;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap; /* Para asegurar que los elementos se ajusten en pantallas pequeñas */
 }
 
+/* Estilo de formularios y entradas */
+.form-container {
+  width: 48%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.map-container {
+  width: 48%;
+}
+
+/* Tabla */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -197,49 +247,7 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  table {
-    width: 100%;
-    font-size: 14px;
-  }
-
-  th, td {
-    padding: 10px;
-  }
-
-  /* Para hacer la tabla más legible en pantallas pequeñas */
-  th, td {
-    display: block;
-    width: 100%;
-    text-align: right;
-  }
-
-  th {
-    background-color: #00b5e2;
-    color: white;
-  }
-
-  td {
-    background-color: #fff;
-    border-top: 1px solid #ddd;
-    text-align: left;
-  }
-
-  td::before {
-    content: attr(data-label);
-    font-weight: bold;
-    display: inline-block;
-    width: 50%;
-  }
-}
-
-/* Estilos adicionales */
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -298,3 +306,78 @@ footer p {
   margin-top: 10px;
   font-size: 14px;
 }
+
+/* Responsividad */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .form-container, .map-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .submit-btn {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Hacer que la tabla sea más legible en dispositivos móviles */
+  table {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  th, td {
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
+
+  th {
+    background-color: #00b5e2;
+    color: white;
+  }
+
+  td {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    text-align: left;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 50%;
+  }
+
+  /* Ajustes en el header */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+}
+

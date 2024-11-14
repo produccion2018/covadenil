@@ -149,3 +149,200 @@ svg:hover {
 }
 
 /* responsive  */
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos de la barra de navegación */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #00b5e2;
+  flex-wrap: wrap;
+}
+
+header .logo img {
+  height: 30px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff7f00;
+}
+
+/* Estilos de producto */
+.product-card {
+  background: linear-gradient(135deg, #5cff1b34, #dcdcdc);
+  transition: transform 0.2s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.card-price {
+  font-size: 1.2em;
+  color: #ff0404;
+}
+
+/* Carrito de compras */
+#carrito-lista {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Icono de WhatsApp */
+.whatsapp-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.whatsapp-link:hover {
+  transform: scale(1.1);
+}
+
+/* Títulos */
+h4 {
+  font-size: 3rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #00b5e2;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-icons {
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #ff7f00;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsividad */
+@media (max-width: 1200px) {
+  header {
+      justify-content: space-between;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+      width: 100%;
+  }
+  
+  iframe {
+      width: 100%;
+      height: auto;
+  }
+  
+  .cards {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .product-card {
+      width: 90%;
+      margin: 10px 0;
+  }
+
+  .whatsapp-link {
+      bottom: 10px;
+      right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h4 {
+      font-size: 2rem;
+      padding: 0.5rem;
+  }
+
+  .footer-icons {
+      display: flex;
+      justify-content: center;
+  }
+
+  .social-icon {
+      font-size: 20px;
+  }
+
+  footer p {
+      font-size: 12px;
+  }
+}
+
+/* Estilo adicional para los íconos */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+svg {
+  width: 80px;
+  height: 80px;
+  fill: #333;
+  cursor: pointer;
+  transition: fill 0.3s;
+}
+
+svg:hover {
+  fill: #007bff;
+}
