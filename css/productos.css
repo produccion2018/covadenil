@@ -1,40 +1,210 @@
+/* Fuente general */
 body {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
 }
 
+/* Estilo para el contenedor de las tarjetas */
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px; /* Bordes más cuadrados */
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin: 15px; /* Separación mayor entre las tarjetas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  border-color: #2196F3;
+}
+
+/* Imágenes de los productos con opacidad */
 .card-img-top {
   object-fit: cover;
   height: 200px;
+  opacity: 0.85; /* Opacidad inicial */
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+.card-img-top:hover {
+  opacity: 1; /* Opacidad al pasar el mouse */
+  transform: scale(1.1); /* Efecto de zoom */
+}
+
+/* Cuerpo de la tarjeta de producto */
 .card-body {
   padding: 20px;
+  background-color: #ffffff;
 }
 
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Botón de añadir al carrito */
+.add-to-cart {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px; /* Botón más pequeño */
+  border: none;
+  border-radius: 20px; /* Bordes más redondeados */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+}
+
+.add-to-cart:hover {
+  background-color: #388E3C;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Carrito de compras */
 #cart-items {
   padding: 20px;
-  background-color: #f8f9fa;
-  border-radius: 8px;
+  background-color: #ffffff;
+  border-radius: 10px; /* Bordes más cuadrados */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
 #cart-total {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.2rem;
+  margin-top: 15px;
 }
 
+/* Botón de Checkout */
 #checkout {
   width: 100%;
+  padding: 12px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 20px; /* Bordes más cuadrados */
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s, transform 0.3s ease;
 }
 
+#checkout:hover {
+  background-color: #1976D2;
+  transform: scale(1.05);
+}
+
+/* Elementos del carrito */
 #cart-items .list-group-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  padding: 12px;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 #cart-items .btn-remove {
   background-color: #dc3545;
   color: white;
   border: none;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 20px; /* Bordes más cuadrados */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+#cart-items .btn-remove:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+/* Estilos generales */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Cabecera */
+header {
+  background-color: #1976D2;
+  color: #1976D2;
+  padding: 25px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #bbb;
+}
+
+/* Diseño de la grilla (Responsivo) */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.col-md-3 {
+  flex: 1 1 calc(25% - 20px);
+  max-width: calc(25% - 20px);
+}
+
+@media (max-width: 1024px) {
+  .col-md-3 {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-3 {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-3 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* SweetAlert2 Customización */
+.swal2-popup {
+  background-color: #ffffff !important;
+  border-radius: 15px !important;
+}
+
+.swal2-title {
+  color: #333 !important;
+  font-size: 1.6rem !important;
+}
+
+.swal2-content {
+  font-size: 1.2rem !important;
+  color: #555 !important;
 }
