@@ -12,7 +12,7 @@ body {
 header {
   background-color: #067bf0;
   padding: 15px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px #0000001a;
 }
 
 /* Estilo del nav */
@@ -60,7 +60,7 @@ header {
 #contacto {
   background-color: #ffffff;
   padding: 50px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px #0000001a;
 }
 
 #contacto h2 {
@@ -93,12 +93,12 @@ header {
 
 .form-control:focus {
   border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 5px #007bff80;
 }
 
 button[type="submit"] {
   background-color: #007bff;
-  color: white;
+  color: #ffffff;
   padding: 12px 25px;
   border: none;
   border-radius: 5px;
@@ -116,7 +116,7 @@ button[type="submit"]:hover {
 #redes {
   background-color: #ffffff;
   padding: 40px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px #0000001a;
 }
 
 .social-links {

@@ -18,7 +18,7 @@ body {
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 20px #00000026;
   border-color: #2196F3;
 }
 
@@ -26,13 +26,13 @@ body {
 .card-img-top {
   object-fit: cover;
   height: 200px;
-  opacity: 0.85; /* Opacidad inicial */
+  opacity: 0.85; 
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .card-img-top:hover {
-  opacity: 1; /* Opacidad al pasar el mouse */
-  transform: scale(1.1); /* Efecto de zoom */
+  opacity: 1; 
+  transform: scale(1.1); 
 }
 
 /* Cuerpo de la tarjeta de producto */
@@ -58,19 +58,19 @@ body {
 .add-to-cart {
   background-color: #4CAF50;
   color: white;
-  padding: 8px 16px; /* Botón más pequeño */
+  padding: 8px 16px; 
   border: none;
-  border-radius: 20px; /* Bordes más redondeados */
+  border-radius: 20px; 
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
-  font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+  font-size: 0.9rem; 
 }
 
 .add-to-cart:hover {
   background-color: #388E3C;
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px #00000026;
 }
 
 /* Carrito de compras */
@@ -93,7 +93,7 @@ body {
   width: 100%;
   padding: 12px;
   background-color: #2196F3;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 20px; /* Bordes más cuadrados */
   font-size: 1.1rem;

@@ -12,7 +12,7 @@ header .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: fixed; /* Fija la imagen */
+  position: fixed; 
   top: 0;
   left: 0;
   z-index: -1;
@@ -41,22 +41,22 @@ header .carousel-item img {
 
 /* Sección Nosotros y Servicios */
 .section {
-  background-color: white; /* Fondo blanco */
+  background-color: #ffffff; 
   padding: 30px;
   margin: 20px 0;
-  border-radius: 10px; /* Cuadrar el fondo */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px #0000001a;
 }
 
 .section h1 {
   font-weight: 600;
-  color: orange;
+  color: #ffa500;
   margin-bottom: 20px;
 }
 
 .section p {
-  font-weight: 300; /* Negrita delgada */
-  color: black; /* Texto negro */
+  font-weight: 300; 
+  color: #000000; 
   text-align: center;
   line-height: 1.6;
 }
@@ -72,7 +72,7 @@ header .carousel-item img {
 /* Beneficios */
 #beneficios {
   padding: 50px 0;
-  background-color: #f9f9f9; /* Fondo claro para la sección */
+  background-color: #f9f9f9; 
 }
 
 .benefits-title {
@@ -100,15 +100,15 @@ header .carousel-item img {
   justify-content: space-between;
   border-radius: 15px;
   background-color: #fff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px #0000001a;
   overflow: hidden;
   transform: scale(1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el cursor */
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra más grande al hacer hover */
+  transform: scale(1.05); 
+  box-shadow: 0 8px 30px #00000033; 
 }
 
 .card img {
@@ -119,7 +119,7 @@ header .carousel-item img {
 }
 
 .card:hover img {
-  transform: scale(1.1); /* Hacer zoom en la imagen */
+  transform: scale(1.1); 
 }
 
 .card-body {
@@ -128,7 +128,7 @@ header .carousel-item img {
 }
 
 .card h2 {
-  color: orange;
+  color: #ffa500;
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -143,10 +143,10 @@ header .carousel-item img {
 }
 
 .card:hover p {
-  color: orange; /* Cambiar el color del texto a naranja cuando el cursor pasa */
+  color: #ffa500; 
 }
 
-/* Animación de las cards (aparecer con efecto deslizante) */
+/* Animación de las cards  */
 .card {
   opacity: 0;
   transform: translateY(20px);
@@ -193,7 +193,7 @@ header .carousel-item img {
 /* Footer */
 footer {
   background-color: #007BFF;
-  color: white;
+  color: #ffffff;
   padding: 20px 0;
 }
 
@@ -203,13 +203,13 @@ footer {
 
 .footer-icons .social-icon {
   margin: 0 15px;
-  font-size: 1.8rem; /* Aumentamos el tamaño de los íconos */
-  color: white; /* Íconos de redes sociales blancos */
+  font-size: 1.8rem; 
+  color: #ffffff; 
   transition: color 0.3s ease;
 }
 
 .footer-icons .social-icon:hover {
-  color: orange; /* Color naranja al pasar el cursor */
+  color: #ffa500; 
 }
 
 /* Animación WhatsApp */
@@ -229,9 +229,9 @@ footer {
 /* Estilos responsive para la imagen en el header */
 @media (max-width: 768px) {
   header .carousel-item img {
-    position: relative; /* Cambiar posición a relativa para que no quede fija */
-    object-fit: cover; /* Asegurar que cubra toda el área */
-    height: 300px; /* Reducir altura en pantallas pequeñas */
+    position: relative; 
+    object-fit: cover; 
+    height: 300px; 
   }
   
   /* Ajustes para el nav en dispositivos móviles */
