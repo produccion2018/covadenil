@@ -5,7 +5,7 @@ const cartItems = document.getElementById('cart-items');
 const checkoutButton = document.getElementById('checkout');
 const cartTotal = document.getElementById('cart-total');
 
-// Función para mostrar una alerta con SweetAlert2
+//  SweetAlert2
 function showAlert(icon, title, text) {
   Swal.fire({
     icon: icon,

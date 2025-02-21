@@ -234,7 +234,7 @@ footer {
     height: 300px; 
   }
   
-  /* Ajustes para el nav en dispositivos móviles */
+  /*  el nav en dispositivos móviles */
   .navbar-nav {
     flex-direction: column;
     align-items: center;
@@ -247,17 +247,18 @@ footer {
   }
 
   .video-container iframe {
-    height: 250px; /* Reducir tamaño del video en móviles */
+    height: 250px; 
   }
 
-  /* Hacer que las cards se apilen en dispositivos móviles */
+  /* lass cards  dispositivos móviles */
   .cards {
     flex-direction: column;
     align-items: center;
   }
 
+  /*  cards más pequeñas en móvil */
   .card {
-    width: 90%; /* Hacer las cards más pequeñas en móvil */
+    width: 90%; 
     height: auto;
   }
 
